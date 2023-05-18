@@ -1,5 +1,3 @@
-console.log('app.js included successfully')
-
 function convertTemp() {
     let input = document.getElementById('inputText');
     let output = document.getElementById('outputText');
