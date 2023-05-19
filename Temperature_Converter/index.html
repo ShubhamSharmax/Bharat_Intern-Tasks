@@ -11,10 +11,12 @@
 </head>
 <body>
     <div class="container">
-        <header><h1>Temperature Converter</h1></header>
-        <p id="outputText"></p>    
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        <p id="outputText"></p>
         <div class="main">
-            <input type="number" id="inputText">
+            <input type="number" id="inputText" placeholder="Enter Temperature">
             <div class="unit">
                 <select name="tempunit" id="inpUnit">
                     <option value="Celsius" selected>Celsius</option>
@@ -22,29 +24,29 @@
                     <option value="Kelvin">Kelvin</option>
                 </select>
                 <span>➤</span>
-                
                 <select name="tempunit" id="outUnit">
                     <option value="Celsius">Celsius</option>
                     <option value="Farenheit" selected>Farenheit</option>
                     <option value="Kelvin">Kelvin</option>
                 </select>
             </div>
-                <button onclick="convertTemp()">Convert 🗘</button>
+            <button onclick="convertTemp()">Convert 🗘</button>
         </div>
         <footer>
             <div class="footer-center">
-            <p>
-                Created by Shubham Sharma
-            </p>
+                <p>
+                    Created by Shubham Sharma
+                </p>
             </div>
             <div class="footer-right">
-              <a href="https://www.instagram.com/shubham.sharma02" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/shubham-sharma02" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/ShubhamSharmax" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/shubham.sharma02" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shubham-sharma02" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ShubhamSharmax" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-          </footer>
-          
+        </footer>
     </div>
-    <script src="app.js"></script>   
+    <script src="app.js"></script>
 </body>
 </html>
