@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharat Intern Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="tempIcon.png" type="image/x-icon">
+    <title>Temperature Converter</title>
 </head>
 <body>
-    <h1>Bharat Intern Internship Completed tasks</h1>
-    <button id="btn1">task 1</button>
-    <button id="btn2">task 2</button>
-    <script>
-        let btn1 = document.getElementById("btn1");
-        btn1.addEventListener("click", myFunction1);
-        function myFunction1(e){
-            window.location.href ="Temperature_Converter\\index.html";
-        }
-
-        let btn2 = document.getElementById("btn2");
-        btn2.addEventListener("click", myFunction2);
-        function myFunction2(e){
-            window.location.href ="Netflix_Homepage\\index.html";
-        }
-    </script>
+    <div class="container">
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        <p id="outputText"></p>
+        <div class="main">
+            <input type="number" id="inputText" placeholder="Enter Temperature">
+            <div class="unit">
+                <select name="tempunit" id="inpUnit">
+                    <option value="Celsius" selected>Celsius</option>
+                    <option value="Farenheit">Farenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                <span>➤</span>
+                <select name="tempunit" id="outUnit">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Farenheit" selected>Farenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+            <button onclick="convertTemp()">Convert 🗘</button>
+        </div>
+        <footer>
+            <div class="footer-center">
+                <p>
+                    Created by Shubham Sharma
+                </p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/shubham.sharma02" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shubham-sharma02" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ShubhamSharmax" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
